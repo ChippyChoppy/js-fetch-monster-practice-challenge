@@ -3,13 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Monstr</title>
-    <!-- <script src='js/index.js'></script> -->
-    <script src='js/demo.js'></script>
+    <script defer src='js/index.js'></script>
+    
+    <!-- <script src='js/demo.js'></script> -->
+    <style>
+      body {
+        background-color: rgb(86, 142, 146);
+        color: #2a2d49
+      }
+    </style>
   </head>
   <body>
     <h1>Monstr Inc.</h1>
     <div id='create-monster'></div>
+      <form id='monster-form'>
+        Name: <input id='name' placeholder='name'> <p></p>
+        Age: <input id='age' placeholder='age'><p></p>
+        Description: <input id='description' placholder='description'><p></p>
+        <button>Create</button>
+      </form>
     <div id='monster-container'></div>
+      <div id='monster-card'></div>
     <button id="back"><=</button>
     <button id="forward">=></button>
   </body>
